@@ -17,7 +17,11 @@
     <!-- lg = 1024px -->
     <header>
       <h1 class="pointer-events-none">
-        <img src="./logo1.png" alt="로고" class="pointer-events-none w-1/2 max-w-[800px] max-h-[800px] mx-auto" />
+        <img
+          src="./logo1.png"
+          alt="로고"
+          class="pointer-events-none w-1/2 max-w-[400px] max-h-[800px] mx-auto py-14"
+        />
       </h1>
       <nav class="px-2 h-[90vh] min-h-[600px] pc:h-[50vh] my-2">
         <ul class="h-full">
@@ -43,7 +47,7 @@
               </ul>
               <ul>
                 <li>
-                  <b>Welcome!</b>
+                  <b>환영합니다!</b>
                 </li>
                 <li>
                   <i class="fa-solid fa-arrow-down"></i>
@@ -78,7 +82,7 @@
               </ul>
               <ul>
                 <li>
-                  <b>Works</b>
+                  <b>작업물</b>
                 </li>
                 <li>
                   <i class="fa-solid fa-laptop-file"></i>
@@ -101,7 +105,7 @@
               </ul>
               <ul>
                 <li>
-                  <b>About me</b>
+                  <b>저를 소개합니다</b>
                 </li>
                 <li>
                   <i class="fa-regular fa-address-card"></i>
@@ -114,10 +118,14 @@
             id="contact"
           >
             <div class="opacity-0 group-hover/text:opacity-100" id="textAni">
-              <p class="">코드와 디자인에 대한 끝없는 탐구와 창의적인 아이디어를 바탕으로
-                함께 일하며 최고의 결과물을 만들어내겠습니다.</p>
-              <p class="">코드와 디자인에 대한 끝없는 탐구와 창의적인 아이디어를 바탕으로
-                함께 일하며 최고의 결과물을 만들어내겠습니다.</p>
+              <p class="">
+                코드와 디자인에 대한 끝없는 탐구와 창의적인 아이디어를 바탕으로
+                함께 일하며 최고의 결과물을 만들어내겠습니다.
+              </p>
+              <p class="">
+                코드와 디자인에 대한 끝없는 탐구와 창의적인 아이디어를 바탕으로
+                함께 일하며 최고의 결과물을 만들어내겠습니다.
+              </p>
             </div>
             <div class="group-hover/text:opacity-0" id="textContent">
               <ul>
@@ -125,7 +133,7 @@
               </ul>
               <ul>
                 <li>
-                  <b>Contact</b>
+                  <b>연락주세요!</b>
                 </li>
                 <li>
                   <i class="fa-regular fa-user-pen"></i>
@@ -137,12 +145,80 @@
       </nav>
     </header>
     <section id="sec1" class="px-2">
-      <h2 class="h-[40vh] rounded-[54px] bg-[#1B1B1F] mb-2"></h2>
-      <ul class="flex flex-col gap-2 overflow-hidden">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+      <h2 class="h-[40vh] rounded-[54px] bg-[#1B1B1F] mb-2 overflow-hidden">
+        <p class="mobile:text-[20px] pc:text-[30px] text-[#A5A1FF] pb-2">
+          기술 스택
+        </p>
+        <p
+          class="mobile:text-[30px] leading-relaxed pc:leading-snug pc:text-[35px] text-[#A5A1FF] text-ellipsis"
+        >
+          <b>HTML, CSS, JavaScript, React, Tailwind, Git</b>등 다양한 기술을
+          사용한 경험이 있습니다. 저는 최신 프런트 엔드 프레임워크와
+          라이브러리에 능숙하며 Git을 사용하여 프로젝트에서 공동 작업을 수행할
+          수 있는 능력에 자신이 있습니다.<span class="hidden pc:inline">
+            특히 최신 <b>ES6</b> 구문 을 사용하는데 능숙하여 깨끗하고 효율적이며
+            읽기 쉬운 코드를 작성할 수 있습니다.
+          </span>
+        </p>
+      </h2>
+      <ul class="flex flex-col gap-2 overflow-hidden" id="profile">
+        <li>
+          <div id="iconWrap">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3"></i>
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <div id="descWrap">
+            <h3>Html Css Js</h3>
+            <p>
+              HTML, CSS 및 JavaScript에 대해 확실히 이해하고 있으며 시각적으로
+              매력적이고 기능적이며 반응이 빠르고 사용자 친화적인 웹 사이트를
+              만들 수 있습니다
+            </p>
+          </div>
+        </li>
+        <li>
+          <div id="iconWrap"><i class="fa-brands fa-react"></i></div>
+          <div id="descWrap">
+            <h3>React</h3>
+            <p>
+              React에 능숙하지는 않지만 다양한 기능을 활용할줄알고 동적인 UI를
+              구현하고 또한 React Router, Redux와 같은 라이브러리와 함께 작업할
+              수 있으며, 최신 기술 동향에 대한 지속적인 관심으로 업무에 큰
+              도움을 줄 수 있습니다.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div id="iconWrap">
+            <img
+              src="./tailwindcss-icon.svg"
+              alt="tailwindcss"
+            />
+          </div>
+          <div id="descWrap">
+            <h3>Tailwindcss</h3>
+            <p>
+              Tailwind CSS에 대한 초급 수준의 지식이 있지만 프레임워크를
+              효과적으로 사용하여 사용자 경험을 우선시하는 잘 디자인되고 반응이
+              빠른 웹 사이트를 만드는 능력에 자신이 있습니다.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div id="iconWrap">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <div id="descWrap">
+            <h3>Git</h3>
+            <p>
+              신입 개발자로서 경험이 많지 않을 수 있지만 버전 관리를 위해 Git을
+              사용하고 팀과 함께 프로젝트를 공동 작업하는 데 능숙합니다. 저는
+              지속적으로 제 기술을 향상시키고 최신 개발 관행을 따라잡기 위해
+              최선을 다하고 있습니다.
+            </p>
+          </div>
+        </li>
       </ul>
     </section>
     <section id="sec2" class="px-2">
@@ -171,7 +247,11 @@
     </section>
     <footer class="py-8 px-14">
       <h2 class="h-40">
-        <img src="./logo1.png" alt="로고" class="min-h-[400px] min-w-[400px] h-full mx-auto" />
+        <img
+          src="./logo1.png"
+          alt="로고"
+          class="min-h-[400px] min-w-[400px] h-full mx-auto"
+        />
       </h2>
     </footer>
 
@@ -196,8 +276,9 @@
       //         console.log(delta)
       //     })
       // })
-      const slideBox = document.querySelectorAll("#sec1 ul li");
-      /*#sec1의 scrollTop값을 기준으로하는 wheel값 적용*/
+      /*
+            const slideBox = document.querySelectorAll("#sec1 ul li");
+      //#sec1의 scrollTop값을 기준으로하는 wheel값 적용
       window.addEventListener("wheel", (e) => {
         //현재 화면의 아래위치값을 가져온다.
         const windowBottom = window.innerHeight + window.scrollY;
@@ -216,6 +297,8 @@
           console.log(calc);
         });
       });
+      */
+
       //if, 현재스크롤값>#sec1의 스크롤값이면 slideBox에 translate적용
       //slideBox의 기본위치값은 translateX 50%이며
       //현재 화면의 스크롤값에 인덱스값을 곱하여 빼준다.

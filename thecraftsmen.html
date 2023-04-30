@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/reset.css" />
+    <style>
+  section {
+        height: 100vh;
+      }
+
+      .row {
+        border: 1px solid #f00;
+        height: 240px;
+        position: relative;
+        margin: 1rem;
+        width: 100%;
+        margin: 10px auto;
+        transition: width 0.5s ease;
+      }
+      .row div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 60px;
+        transition: width 0.5s ease;
+      }
+      .row .lnb {
+  width: 60%;
+  background: #1b1b1f;
+  left: 30%;
+  transition: left 1s ease, width 0.5s ease;
+}
+
+.row .lnb.smooth {
+  transition: left 1s cubic-bezier(0.22, 0.61, 0.36, 1),
+    width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+   
+
+      .row .rnb {
+        width: 50%;
+        right: 10%;
+        background: #a5a1ff;
+        transition: right 1s ease, width 1s ease;
+      }
+      .row .rnb.smooth {
+        transition: right 1s cubic-bezier(0.22, 0.61, 0.36, 1),
+    width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+
+
+      .scrolling {
+        transition: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <section></section>
+    <div id="project">
+      <div class="row row1">
+        <div class="lnb" data-delay="0"></div>
+        <div class="rnb"></div>
+      </div>
+      <div class="row row2">
+        <div class="lnb" data-delay="100"></div>
+        <div class="rnb"></div>
+      </div>
+      <div class="row row3">
+        <div class="lnb" data-delay="200"></div>
+        <div class="rnb"></div>
+      </div>
+      <div class="row row4">
+        <div class="lnb"></div>
+        <div class="rnb"></div>
+      </div>
+    </div>
+    <section></section>
+    <script>
+      const lnbElements = document.querySelectorAll('.lnb');
+      const rnbElements = document.querySelectorAll('.rnb');
+      
+      document.addEventListener('wheel', (event) => {
+        lnbElements.forEach((lnbElement, index) => {
+          const delay = parseInt(lnbElement.dataset.delay, 10);
+      
+          const moveToLeft = () => {
+            lnbElement.style.left = '0%';
+            lnbElement.classList.remove('smooth');
+          };
+      
+          const moveToRight = () => {
+            lnbElement.style.left = '30%';
+            lnbElement.classList.add('smooth');
+          };
+      
+          if (event.deltaY > 0) {
+            setTimeout(moveToLeft, delay * index);
+          } else if (event.deltaY < 0) {
+            setTimeout(moveToRight, delay * (lnbElements.length - index - 1));
+          }
+        });
+    
+        rnbElements.forEach((rnbElement, index) => {
+          const delay = parseInt(rnbElement.parentElement.querySelector('.lnb').dataset.delay, 10);
+      
+          const moveToTop = () => {
+            rnbElement.style.right = '0%';
+          };
+      
+          const moveToBottom = () => {
+            rnbElement.style.right = '10%';
+          };
+      
+          if (event.deltaY > 0) {
+            setTimeout(moveToTop, delay * index);
+          } else if (event.deltaY < 0) {
+            setTimeout(moveToBottom, delay * (rnbElements.length - index - 1));
+          }
+        });
+      });
+    </script>
+    
+    
+
+
+    </script>
+  </body>
+</html>

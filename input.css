@@ -122,13 +122,44 @@ div#textContent ul {
 div#textContent ul li i {
   font-weight: 600;
 }
-
-#sec1 ul li {
+#sec1 > h2{
+  padding: 30px 30px 36px 44px;
+}
+#sec1 #profile li{
+  display: flex;
+  gap: 20px;
+  color: #A5A1FF;
+}
+#sec1 #profile li #iconWrap{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 10%;
+  min-width: 30px;
+  max-width: 70px;
+  justify-content: center;
+  gap: 15px;
+}
+#sec1 #profile li #iconWrap img{
+  max-width: 30px;
+  width: 100%;
+}
+#sec1 #profile li #descWrap h3{
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+#sec1 #profile li i{
+  font-size: 30px;
+  color: #A5A1FF;
+}
+#profile li {
   height: 12rem;
   border-radius: 54px;
+  padding: 30px 30px 36px 44px;
   background-color: #1b1b1f;
   transition-duration: 300ms;
-  transform: translateX(50%);
+  /* transform: translateX(50%); */
 }
 
 #sec2 ul li {
