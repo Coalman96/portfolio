@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>이상민</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +28,7 @@
         <img
           src="./logo1.png"
           alt="로고"
-          class="pointer-events-none w-1/2 max-w-[400px] max-h-[800px] mx-auto py-14"
+          class="pointer-events-none w-1/2 max-w-[100px] max-h-[800px] mx-auto py-14"
         />
       </h1>
       <nav class="px-2 h-[90vh] min-h-[600px] pc:h-[50vh] my-2">
@@ -39,10 +47,10 @@
             <div id="textContent">
               <ul>
                 <li>
-                  <b>이상민</b>
+                  <b>Welcome!</b>
                 </li>
                 <li>
-                  <figure>로고</figure>
+                  <figure><img src="./logo1.png" alt="logo" /></figure>
                 </li>
               </ul>
               <ul>
@@ -150,88 +158,352 @@
           기술 스택
         </p>
         <p
-          class="mobile:text-[30px] leading-relaxed pc:leading-snug pc:text-[35px] text-[#A5A1FF] text-ellipsis"
+          class="mobile:text-[27px] leading-[1.4] pc:leading-snug pc:text-[30px] text-[#A5A1FF] text-ellipsis"
         >
-          <b>HTML, CSS, JavaScript, React, Tailwind, Git</b>등 다양한 기술을
-          사용한 경험이 있습니다. 저는 최신 프런트 엔드 프레임워크와
-          라이브러리에 능숙하며 Git을 사용하여 프로젝트에서 공동 작업을 수행할
-          수 있는 능력에 자신이 있습니다.<span class="hidden pc:inline">
+          저는 HTML, CSS 및 JavaScript에 대한
+          튼튼한 기반을 가지고 있습니다. 아직 React 및 Tailwind CSS를 배우는
+          과정에 있지만 계속해서 기술을 확장하고 있습니다.
+          버전 관리를 위해 Git을 사용하고 팀과 협력하여 모바일 앱
+          프로젝트를 제작한 경험이 있습니다. 제 목표는 사용자 경험을 우선시하는
+          시각적으로 매력적이고 기능적이며 사용자 친화적인 웹 사이트를 만드는
+          것입니다.<span
+            class="hidden pc:inline"
+          >
             특히 최신 <b>ES6</b> 구문 을 사용하는데 능숙하여 깨끗하고 효율적이며
             읽기 쉬운 코드를 작성할 수 있습니다.
           </span>
         </p>
       </h2>
       <ul class="flex flex-col gap-2 overflow-hidden" id="profile">
-        <li>
-          <div id="iconWrap">
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3"></i>
-            <i class="fa-brands fa-js"></i>
+        <li class="row row1">
+          <div class="lnb" data-delay="0">
+            <div id="iconWrap">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3"></i>
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <div id="descWrap">
+              <h3>Html Css Js</h3>
+              <p>
+                HTML, CSS 및 JavaScript에 대해 확실히 이해하고 있으며 시각적으로
+                매력적이고 기능적이며 반응이 빠르고 사용자 친화적인 웹 사이트를
+                만들 수 있습니다
+              </p>
+            </div>
           </div>
-          <div id="descWrap">
-            <h3>Html Css Js</h3>
-            <p>
-              HTML, CSS 및 JavaScript에 대해 확실히 이해하고 있으며 시각적으로
-              매력적이고 기능적이며 반응이 빠르고 사용자 친화적인 웹 사이트를
-              만들 수 있습니다
-            </p>
-          </div>
+          <div class="rnb"></div>
         </li>
-        <li>
-          <div id="iconWrap"><i class="fa-brands fa-react"></i></div>
-          <div id="descWrap">
-            <h3>React</h3>
-            <p>
-              React에 능숙하지는 않지만 다양한 기능을 활용할줄알고 동적인 UI를
-              구현하고 또한 React Router, Redux와 같은 라이브러리와 함께 작업할
-              수 있으며, 최신 기술 동향에 대한 지속적인 관심으로 업무에 큰
-              도움을 줄 수 있습니다.
-            </p>
+        <li class="row row2">
+          <div class="lnb" data-delay="100">
+            <div id="iconWrap"><i class="fa-brands fa-react"></i></div>
+            <div id="descWrap">
+              <h3>React</h3>
+              <p>
+                React에 능숙하지는 않지만 다양한 기능을 활용할줄알고 동적인 UI를
+                구현하고 또한 React Router, Redux와 같은 라이브러리와 함께
+                작업할 수 있으며, 최신 기술 동향에 대한 지속적인 관심으로 업무에
+                큰 도움을 줄 수 있습니다.
+              </p>
+            </div>
           </div>
+          <div class="rnb"></div>
         </li>
-        <li>
-          <div id="iconWrap">
-            <img
-              src="./tailwindcss-icon.svg"
-              alt="tailwindcss"
-            />
+        <li class="row row3">
+          <div class="lnb" data-delay="200">
+            <div id="iconWrap">
+              <img src="./tailwindcss-icon.svg" alt="tailwindcss" />
+            </div>
+            <div id="descWrap">
+              <h3>Tailwindcss</h3>
+              <p>
+                Tailwind CSS에 대한 초급 수준의 지식이 있지만 프레임워크를
+                효과적으로 사용하여 사용자 경험을 우선시하는 잘 디자인되고
+                반응이 빠른 웹 사이트를 만드는 능력에 자신이 있습니다.
+              </p>
+            </div>
           </div>
-          <div id="descWrap">
-            <h3>Tailwindcss</h3>
-            <p>
-              Tailwind CSS에 대한 초급 수준의 지식이 있지만 프레임워크를
-              효과적으로 사용하여 사용자 경험을 우선시하는 잘 디자인되고 반응이
-              빠른 웹 사이트를 만드는 능력에 자신이 있습니다.
-            </p>
-          </div>
+          <div class="rnb"></div>
         </li>
-        <li>
-          <div id="iconWrap">
-            <i class="fa-brands fa-github"></i>
+        <li class="row row4">
+          <div class="lnb">
+            <div id="iconWrap">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div id="descWrap">
+              <h3>Git</h3>
+              <p>
+                신입 개발자로서 경험이 많지 않을 수 있지만 버전 관리를 위해
+                Git을 사용하고 팀과 함께 프로젝트를 공동 작업하는 데 능숙합니다.
+                저는 지속적으로 제 기술을 향상시키고 최신 개발 관행을 따라잡기
+                위해 최선을 다하고 있습니다.
+              </p>
+            </div>
           </div>
-          <div id="descWrap">
-            <h3>Git</h3>
-            <p>
-              신입 개발자로서 경험이 많지 않을 수 있지만 버전 관리를 위해 Git을
-              사용하고 팀과 함께 프로젝트를 공동 작업하는 데 능숙합니다. 저는
-              지속적으로 제 기술을 향상시키고 최신 개발 관행을 따라잡기 위해
-              최선을 다하고 있습니다.
-            </p>
-          </div>
+          <div class="rnb"></div>
         </li>
       </ul>
     </section>
     <section id="sec2" class="px-2">
-      <h2 class="h-[45vh] rounded-[54px] bg-[#fff] my-2"></h2>
-      <ul class="flex flex-wrap gap-2">
+      <h2
+        class="h-[45vh] rounded-[54px] bg-[#fff] my-2 group/text hover:scale-[.98]"
+      >
+        <div id="textContent">
+          <ul>
+            <li>
+              <b>01.</b>
+            </li>
+            <li>
+              <figure><img src="./logo1.png" alt="logo" /></figure>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <b>App Project</b>
+            </li>
+            <li>
+              <i class="fa-solid fa-laptop-file"></i>
+            </li>
+          </ul>
+        </div>
+      </h2>
+      <div
+        class="relative flex rounded-[54px] h-[50vh] bg-slate-400"
+        id="projectContainer"
+      >
+        <ul class="w-full h-full flex shrink-0 transition" id="projectItem">
+          <li class="">
+            <figure>
+              <img src="" alt="" />
+              <p>#02</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#03</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#04</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#05</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#06</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#07</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#08</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#09</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#10</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#11</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#12</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#13</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#14</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#15</p>
+            </figure>
+          </li>
+        </ul>
+        <ul class="w-full h-full flex shrink-0 transition" id="projectItem">
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#02</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#03</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#04</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#05</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#06</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#07</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#08</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#09</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#10</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#11</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#12</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#13</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#14</p>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+              <p>#15</p>
+            </figure>
+          </li>
+        </ul>
+        <ul class="flex" id="flowWrap">
+          <li id="reverse"></li>
+          <li id="speed"></li>
+        </ul>
+      </div>
+      <!-- <ul class="flex flex-wrap gap-2">
         <li class="bg-[#CBE5FF]"></li>
         <li class="bg-[#021F23]"></li>
         <li class="bg-[#D0FF94]"></li>
         <li class="bg-[#290038]"></li>
-      </ul>
+      </ul> -->
     </section>
     <section id="sec3" class="px-2 my-2 relative">
-      <article class="h-[75vh] rounded-[54px] bg-[#1F1A1C]"></article>
+      <article
+        class="relative h-[75vh] rounded-[54px] overflow-hidden text-[#FFAED8] bg-[#1F1A1C]"
+      >
+        <div class="my-5" id="textAni">
+          <p class="">Who am I?&nbsp;</p>
+          <p class="">Who am I?&nbsp;</p>
+          <p class="">Who am I?&nbsp;</p>
+          <p class="">Who am I?&nbsp;</p>
+        </div>
+        <p
+          class="w-[90%] pc:w-[60%] mb-[1.3vh] mobile:mx-auto pc:ml-10 pc:leading-relaxed"
+        >
+          안녕하세요! 저는 이상민입니다. 공군부사관으로 군 생활을 하며, 소속된
+          집단에 충성심을 갖는 것이 중요하다는 가치를 배웠습니다. 이를 개발자로
+          전환하면서, 항상 새로운 것을 배우고 노력하며 업무를 수행하겠습니다.
+          주어진 일에 대한 책임감을 가지고 끝까지 완성도 높은 결과물을
+          만들어내기 위해 노력하겠습니다 또한, 업계의 최신 트렌드를 따라가며
+          성장하고 발전하려고 노력하고 있습니다. 함께 성장할 수 있는 기회가
+          주어졌을 때, 최선을 다해 일하겠습니다.
+        </p>
+        <div class="swiper mySwiper pc:mt-[5%]">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper mySwiper mt-10 pc:hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </article>
     </section>
     <section id="sec4" class="px-2">
       <h2 class="h-[55vh] rounded-[54px] bg-[#1D1C16] my-2"></h2>
@@ -247,63 +519,24 @@
     </section>
     <footer class="py-8 px-14">
       <h2 class="h-40">
-        <img
-          src="./logo1.png"
-          alt="로고"
-          class="min-h-[400px] min-w-[400px] h-full mx-auto"
-        />
+        <!-- <img src="./logo1.png" alt="로고" class="min-h-[400px] min-w-[400px] h-full mx-auto"/> -->
       </h2>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script
       src="https://kit.fontawesome.com/7f5b18e718.js"
       crossorigin="anonymous"
     ></script>
 
     <script>
-      // console.log(slideBox)
-      // console.log(sec1Top)
-      // console.log(scrY)
-
-      /*마우스 스크롤 값에 따른 움직임*/
-      //마우스휠에따른 delta값을 가져온다.
-      //가져온 delta값에 따라 음수 양수로 나뉜다.
-      //sec1을 지나면서 아래의 li에 translateX적용
-      // slideBox.forEach((ele)=>{
-      //     ele.addEventListener('wheel',(event)=>{
-      //         event.preventDefault()
-      //         const delta = Math.sign(event.deltaY)
-      //         console.log(delta)
-      //     })
-      // })
-      /*
-            const slideBox = document.querySelectorAll("#sec1 ul li");
-      //#sec1의 scrollTop값을 기준으로하는 wheel값 적용
-      window.addEventListener("wheel", (e) => {
-        //현재 화면의 아래위치값을 가져온다.
-        const windowBottom = window.innerHeight + window.scrollY;
-        //#sec1 ul의 시작부분의 위치값을 가져온다.
-        const sec1Top = document.querySelector("#sec1 ul").offsetTop;
-        //만약 windowBottom>sec1Top이면 slideBox에 translate를 순차적으로 0까지 이동시킨다.
-        //기본값은 50으로 설정한다.
-        const defaultTx = 50;
-        //sec1Top의 높이값에 windowBottom을 빼면 시작값을 만들수있다.
-        const calc = Math.min(0, Math.max(-50, (sec1Top - windowBottom) / 10));
-        //translate의 기본값은 50%이며 스크롤값에따라 -되어 0까지 가야한다.
-        slideBox.forEach((ele, index) => {
-          ele.style.transform = `translateX(${
-            defaultTx + calc / (index + 1)
-          }%)`;
-          console.log(calc);
-        });
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 15,
+        loop: true,
+        centeredSlides: true,
       });
-      */
-
-      //if, 현재스크롤값>#sec1의 스크롤값이면 slideBox에 translate적용
-      //slideBox의 기본위치값은 translateX 50%이며
-      //현재 화면의 스크롤값에 인덱스값을 곱하여 빼준다.
-
-      // console.log(headerH)
 
       const lists = document.querySelectorAll("nav>ul>li");
       const shapes = document.querySelectorAll("#shapes ul li");
@@ -314,7 +547,6 @@
         console.log(list.id);
         list.addEventListener("mouseover", () => {
           //만약 list의 id가 shapes의 id와 같다면 scale 1.5
-          //현재 infinityRotate애니메이션때문에 transform적용불가.
           for (const shape of shapes) {
             if (list.id === shape.id) {
               shape.style.filter = "grayscale(0)";
@@ -336,6 +568,115 @@
           }
         });
       }
+
+      const lnbElements = document.querySelectorAll(".lnb");
+      const rnbElements = document.querySelectorAll(".rnb");
+
+      document.addEventListener("wheel", (event) => {
+        lnbElements.forEach((lnbElement, index) => {
+          const delay = parseInt(lnbElement.dataset.delay, 10);
+
+          const moveToLeft = () => {
+            lnbElement.style.left = "0%";
+            lnbElement.classList.remove("smooth");
+          };
+
+          const moveToRight = () => {
+            lnbElement.style.left = "30%";
+            lnbElement.classList.add("smooth");
+          };
+
+          if (event.deltaY > 0) {
+            setTimeout(moveToLeft, delay * index);
+          } else if (event.deltaY < 0) {
+            setTimeout(moveToRight, delay * (lnbElements.length - index - 1));
+          }
+        });
+
+        rnbElements.forEach((rnbElement, index) => {
+          const delay = parseInt(
+            rnbElement.parentElement.querySelector(".lnb").dataset.delay,
+            10
+          );
+
+          const moveToTop = () => {
+            rnbElement.style.right = "0%";
+          };
+
+          const moveToBottom = () => {
+            rnbElement.style.right = "10%";
+          };
+
+          if (event.deltaY > 0) {
+            setTimeout(moveToTop, delay * index);
+          } else if (event.deltaY < 0) {
+            setTimeout(moveToBottom, delay * (rnbElements.length - index - 1));
+          }
+        });
+      });
+      /*
+       */
+      const speed = document.querySelector("#speed");
+      const projectItems = document.querySelectorAll("#projectItem");
+
+      let duration = 10; // 기본 animation-duration 값
+
+      let interval = null; // setInterval 객체
+
+      speed.addEventListener("mouseover", () => {
+        clearInterval(interval); // 기존의 setInterval 객체를 중지
+
+        interval = setInterval(() => {
+          duration -= 0.1; // 0.1초씩 감소
+
+          // animation-duration 값이 5초보다 작아지면 5초로 고정
+          if (duration < 7) {
+            duration = 7;
+            clearInterval(interval); // setInterval 객체 중지
+          }
+
+          // 모든 프로젝트 아이템에 animation-duration 값을 적용
+          for (const item of projectItems) {
+            item.style.animationDuration = `${duration}s`;
+            item.style.transition = "animation-duration 0.3s ease-in-out";
+          }
+        }, 10); // 0.1초마다 실행
+      });
+
+      speed.addEventListener("mouseleave", () => {
+        clearInterval(interval); // 기존의 setInterval 객체를 중지
+
+        interval = setInterval(() => {
+          duration += 0.1; // 0.1초씩 증가
+
+          // animation-duration 값이 10초보다 커지면 10초로 고정
+          if (duration > 10) {
+            duration = 10;
+            clearInterval(interval); // setInterval 객체 중지
+          }
+
+          // 모든 프로젝트 아이템에 animation-duration 값을 적용
+          for (const item of projectItems) {
+            item.style.animationDuration = `${duration}s`;
+            item.style.transition = "animation-duration 0.3s ease-in-out";
+          }
+        }, 10); // 0.1초마다 실행
+      });
+
+      // let grid;
+      // const frame = "#projectItem";
+      // const box = "#projectItem li";
+      // const speed = ".35s";
+      // function init() {
+      //   grid = new Isotope(frame, {
+      //     itemSelector: box,
+      //     columnWidth: box,
+      //     transitionDuration: speed,
+      //   });
+      // }
+      // window.addEventListener("load", function () {
+      //   init();
+      // });
     </script>
   </body>
 </html>

@@ -12,17 +12,28 @@
 }
 
 @keyframes infinityRotate {
-    0%{
-        transform: rotate(0deg)
-    }
-    100%{
-        transform: rotate(360deg)
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;900&family=Playfair+Display:wght@500&display=swap");
+section,header{
+  max-width: 1800px;
+  margin: 0 auto;
+}
+header *{
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
 header nav > ul {
   display: grid;
   gap: 0.5rem;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 header nav > ul > li {
@@ -38,14 +49,14 @@ header nav > ul > li {
   align-items: center;
   cursor: pointer;
 }
-div#shapes{
-    position: absolute;
-    height: 350px;
-    width: 350px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
+div#shapes {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
 }
 div#shapes ul {
   position: absolute;
@@ -115,6 +126,13 @@ div#textContent {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   transition-duration: 300ms;
 }
+div#textContent figure {
+  width: 30px;
+  height: 50px;
+}
+div#textContent figure img {
+  width: 100%;
+}
 div#textContent ul {
   display: flex;
   justify-content: space-between;
@@ -122,15 +140,10 @@ div#textContent ul {
 div#textContent ul li i {
   font-weight: 600;
 }
-#sec1 > h2{
+#sec1 > h2 {
   padding: 30px 30px 36px 44px;
 }
-#sec1 #profile li{
-  display: flex;
-  gap: 20px;
-  color: #A5A1FF;
-}
-#sec1 #profile li #iconWrap{
+#sec1 #profile li #iconWrap {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -140,39 +153,149 @@ div#textContent ul li i {
   justify-content: center;
   gap: 15px;
 }
-#sec1 #profile li #iconWrap img{
+#sec1 #profile li #iconWrap img {
   max-width: 30px;
   width: 100%;
 }
-#sec1 #profile li #descWrap h3{
+#sec1 #profile li #descWrap h3 {
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 10px;
 }
-#sec1 #profile li i{
+#sec1 #profile li i {
   font-size: 30px;
-  color: #A5A1FF;
+  color: #a5a1ff;
 }
-#profile li {
+#sec1 #profile li {
+  position: relative;
   height: 12rem;
-  border-radius: 54px;
+  overflow: hidden;
+}
+#sec1 #profile li > div {
+  position: absolute;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  transition: width 0.5s ease;
   padding: 30px 30px 36px 44px;
+}
+#sec1 #profile li .lnb {
+  display: flex;
+  gap: 20px;
   background-color: #1b1b1f;
-  transition-duration: 300ms;
-  /* transform: translateX(50%); */
+  color: #a5a1ff;
+  align-items: center;
+  transition: left 1s ease, width 0.5s ease;
+}
+#sec1 #profile li .rnb {
+  width: 50%;
+  right: 10%;
+  background: #a5a1ff;
+  transition: right 1s ease, width 1s ease;
+}
+.row .lnb.smooth {
+  transition: left 1s cubic-bezier(0.22, 0.61, 0.36, 1),
+    width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-#sec2 ul li {
-  width: 49%;
-  height: 43vh;
-  border-radius: 54px;
+.row .rnb.smooth {
+  transition: right 1s cubic-bezier(0.22, 0.61, 0.36, 1),
+    width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#sec2 h2 {
+  padding: 30px 30px 36px 44px;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   transition-duration: 300ms;
 }
-#sec2 ul li:hover {
-  transform: scale(0.95);
+#sec2 #projectContainer {
+  overflow: hidden;
+}
+#sec2 #projectContainer #flowWrap {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
+#sec2 #projectContainer #flowWrap li {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+#sec2 #projectContainer #flowWrap li:after {
+  content: "\f101";
+  position: absolute;
+  cursor: pointer;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 45px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  text-align: center;
+}
+#sec2 #projectContainer #flowWrap #reverse {
+  transform: rotateY(180deg);
+}
+
+#sec2 #projectContainer #projectItem {
+  animation-name: infinityLoop;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition: animation-duration 0.3s ease-in-out;
+}
+#sec2 #projectItem li {
+  width: 100%;
+  border: 1px solid #000;
+}
+#sec2 #projectItem li:nth-child(1) {
+  border-radius: 0% 100% 100% 0% / 100% 51% 49% 0%;
+}
+#sec2 #projectItem li:nth-child(2) {
+  border-radius: 48% 52% 49% 51% / 48% 54% 46% 52%;
+}
+#sec3 * {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+#sec3 article #textAni p {
+  font-size: min(10vw, 150px);
+}
+#sec3 article>p{
+  font-size: min(4.5vw, 30px);
+  margin-top: min(130px, 70vw);
+}
+
+#sec3 article .swiper {
+  overflow: visible;
+  width: 110vw;
+  max-width: 1800px;
+  height: min(26vw,1000px);
+  transform: rotate(-24deg) translate(-100px, 50px);
+}
+#sec3 article .swiper .swiper-wrapper{
+  width: 100%;
+  height: 100%;
+}
+#sec3 article .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  max-width: 400px;
+  max-height: 400px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #ffaed8;
+}
 #sec4 ul li {
   border-radius: 54px;
 }
@@ -198,13 +321,30 @@ div#textContent ul li i {
     grid-row: 5/6;
     grid-column: 1/-1;
   }
+  #sec2 #projectItem {
+    width: 5000px;
+    gap: 20px;
+    /* animation-duration: 20s; */
+  }
+  #sec2 #projectItem li {
+    width: 100%;
+  }
+  #sec3 article>p{
+    margin-top: 130px;
+  }
+  #sec3 article .swiper {
+    transform: rotate(-24deg) translate(-100px, 50px);
+  }
 }
 
 @media screen and (min-width: 769px) {
   header nav ul {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 300ms;
   }
+
   header nav ul li:nth-child(1) {
     grid-row: 1/-1;
     grid-column: 1/3;
@@ -212,5 +352,23 @@ div#textContent ul li i {
   header nav ul li:nth-child(4) {
     grid-row: 2/2;
     grid-column: 3/-1;
+  }
+  #sec1 #profile li > div {
+    display: block;
+  }
+  #sec1 #profile li .lnb {
+    width: 60%;
+  }
+  #sec1 #profile li #descWrap {
+    width: 67%;
+  }
+  #sec1 #profile li #descWrap h3 {
+    padding-bottom: 0px;
+  }
+  #sec3 article>p{
+    margin-top: 220px;
+  }
+  #sec3 article .swiper {
+    transform: rotate(-24deg) translate(20%, 50px);
   }
 }
