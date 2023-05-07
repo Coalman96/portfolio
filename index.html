@@ -14,12 +14,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;900&family=Playfair+Display:wght@500&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body class="bg-black">
     <!-- lg = 1024px -->
@@ -152,9 +146,34 @@
         </ul>
       </nav>
     </header>
+    <div class="title1" id="container">
+      <svg viewBox="0 0 960 300">
+        <symbol id="s-text">
+          <text text-anchor="middle" x="50%" y="80%">1. Stacks</text>
+        </symbol>
+
+        <g class="g-ants">
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+      </svg>
+    </div>
+    <!-- <h2 class="text-[#A5A1FF]" id="secNum">
+      <span class="mobile:text-[120px]">1.</span
+      ><span class="mobile:ml-2  mobile:text-3xl">Stacks</span>
+    </h2> -->
     <section id="sec1" class="px-2">
-      <div class="h-[40vh] rounded-[54px] bg-[#1B1B1F] mb-2 overflow-hidden">
-        <p class="mobile:text-[20px] pc:text-[30px] text-[#A5A1FF] pb-2">
+      <div
+        class="relative h-[40vh] rounded-[54px] bg-[#1B1B1F] mb-2 overflow-hidden"
+      >
+        <div class="iconsWrap">
+          <figure class="icons"><img src="./images/rotateIcon.png" alt=""></h1>
+        </div>
+        <!-- <p class="mobile:text-[20px] pc:text-[30px] text-[#A5A1FF] pb-2">
           기술 스택
         </p>
         <p
@@ -169,7 +188,7 @@
             특히 최신 <b>ES6</b> 구문 을 사용하는데 능숙하여 깨끗하고 효율적이며
             읽기 쉬운 코드를 작성할 수 있습니다.
           </span>
-        </p>
+        </p> -->
       </div>
       <ul class="flex flex-col gap-2 overflow-hidden" id="profile">
         <li class="row row1">
@@ -240,6 +259,22 @@
         </li>
       </ul>
     </section>
+    <div class="title2" id="container">
+      <svg viewBox="0 0 960 300">
+        <symbol id="g-text">
+          <text text-anchor="middle" x="50%" y="80%">2. Graphics</text>
+        </symbol>
+
+        <g class="g-ants">
+          <use xlink:href="#g-text" class="text-copy"></use>
+          <use xlink:href="#g-text" class="text-copy"></use>
+          <use xlink:href="#g-text" class="text-copy"></use>
+          <use xlink:href="#g-text" class="text-copy"></use>
+          <use xlink:href="#g-text" class="text-copy"></use>
+          <use xlink:href="#g-text" class="text-copy"></use>
+        </g>
+      </svg>
+    </div>
     <section id="sec2" class="px-2 my-2 relative">
       <article
         class="relative h-[45vh] rounded-[54px] bg-[#fff] my-2 hover:scale-[.98]"
@@ -506,9 +541,24 @@
         </ul>
       </article>
     </section>
+    <div class="title3" id="container">
+      <svg viewBox="0 0 960 300">
+        <symbol id="w-text">
+          <text text-anchor="middle" x="50%" y="80%">3. Works</text>
+        </symbol>
+        <g class="g-ants">
+          <use xlink:href="#w-text" class="text-copy"></use>
+          <use xlink:href="#w-text" class="text-copy"></use>
+          <use xlink:href="#w-text" class="text-copy"></use>
+          <use xlink:href="#w-text" class="text-copy"></use>
+          <use xlink:href="#w-text" class="text-copy"></use>
+          <use xlink:href="#w-text" class="text-copy"></use>
+        </g>
+      </svg>
+    </div>
     <section id="sec3" class="px-2">
       <article
-        class="h-[45vh] rounded-[54px] bg-[#fff] my-2 group/text hover:scale-[.98]"
+        class="relative h-[45vh] rounded-[54px] bg-[#fff] my-2 group/text hover:scale-[.98]"
         id="sec3-art1"
       >
         <div id="textContent">
@@ -528,92 +578,172 @@
               <i class="fa-solid fa-laptop-file"></i>
             </li>
           </ul>
+          <div
+            class="absolute w-[50vw] top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]"
+          >
+            <img
+              src="./images/angelThum.png"
+              class="mx-auto"
+              alt="appProject"
+            />
+          </div>
         </div>
       </article>
       <article class="h-[100vh] rounded-[54px] bg-[#fff] pined section">
         <div class="h-full pined-inner">
           <ul class="pined-list">
             <li class="mt-[-200px]">
-              <p>&lt;Delmont&gt;<span class="text-[#5e993e]">&#47;&#47;&nbsp;Traversing</span></p>
-              <figure>
+              <figure class="bg-[#3eef84]">
                 <img src="./images/delmotThum.png" alt="델몬트" />
               </figure>
-              <p class="bottom-0">&lt;Delmont&#47;&gt;</p>
+              <div class="flex text-left h-[40%]">
+                <span class="w-[20%] p-5 text-[35px] font-bold">01.</span>
+                <span class="w-[80%] p-5 text-[20px] font-bold leading-[50px]"
+                  >Javascript Traversing</span
+                >
+              </div>
             </li>
             <li class="mt-[-160px]">
-              <p>&lt;Yes24티켓&gt<span class="text-[#5e993e]">&#47;&#47;&nbsp;MultiTab</span></p>
-              <figure>
+              <figure class="bg-[#ec7d2c]">
                 <img src="./images/yes24Thum.png" alt="예스24" />
               </figure>
-              <p class="bottom-0">&lt;Yes24 티켓&#47;&gt;</p>
+              <div class="flex text-left h-[40%]">
+                <span class="w-[20%] p-5 text-[35px] font-bold">02.</span>
+                <span class="w-[80%] p-5 text-[20px] font-bold leading-[50px]"
+                  >Javascript MultiTab</span
+                >
+              </div>
             </li>
             <li class="mt-[-120px]">
-              <p>&lt;칠성사이다&gt;<span class="text-[#5e993e]">&#47;&#47;&nbsp;</span></p>
-              <figure>
+              <figure class="bg-[#fff]">
                 <img src="./images/cidarThum.png" alt="칠성사이다" />
               </figure>
-              <p class="bottom-0">&lt;칠성사이다&#47;&gt;</p>
+              <div class="flex text-left h-[40%]">
+                <span class="w-[20%] p-5 text-[35px] font-bold">03.</span>
+                <span class="w-[80%] p-5 text-[20px] font-bold leading-[50px]"
+                  >TabMenu & Offset
+                  <br />
+                  Jquery isotope
+                </span>
+              </div>
             </li>
             <li class="mt-[-80px]">
-              <p>&lt;위메프오&gt;<span class="text-[#5e993e]">&#47;&#47;&nbsp;WheelControl</span></p>
-              <figure>
+              <figure class="bg-[#f9d203]">
                 <img src="./images/wmpoThum.png" alt="위메프오" />
               </figure>
-              <p class="bottom-0">&lt;위메프오&#47;&gt;</p>
+              <div class="flex text-left h-[40%]">
+                <span class="w-[20%] p-5 text-[35px] font-bold">04.</span>
+                <span class="w-[80%] p-5 text-[20px] font-bold leading-[50px]"
+                  >Javascript WheelControl
+                  <br />
+                  Onepage Layout
+                </span>
+              </div>
             </li>
             <li class="mt-[-40px]">
-              <p>&lt;밤도깨비 야시장&gt;</p>
-              <figure>
+              <figure class="bg-[#ad00e2]">
                 <img src="./images/nightMarketThum.png" alt="밤도깨비" />
               </figure>
-              <p class="bottom-0">&lt;밤도깨비 야시장&#47;&gt;</p>
+              <div class="flex text-left h-[40%]">
+                <span class="w-[20%] p-5 text-[35px] font-bold">05.</span>
+                <span class="w-[80%] p-5 text-[20px] font-bold leading-[50px]"
+                  >Javascript ScrollEvent
+                  <br />
+                  Position Sticky
+                </span>
+              </div>
             </li>
             <li>
-              <p>&lt;인천광역시&gt;<span class="text-[#5e993e]">&#47;&#47;&nbsp;TailWindCSS</span></p>
-              <figure>
+              <figure class="bg-[#c0e9fb]">
                 <img src="./images/IncheonThum.png" alt="인천광역시" />
               </figure>
-              <p class="bottom-0">&lt;인천광역시&#47;&gt;</p>
-            </li>
-            <li>
-              <p>&lt;Manage&gt;<span class="text-[#5e993e]">&#47;&#47;&nbsp;TailWindCSS</span></p>
-              <figure>
-                <img src="./images/manageThum.png" alt="manage" />
-              </figure>
-              <p class="bottom-0">&lt;Manage&#47;&gt;</p>
+              <div class="flex text-left h-[40%]">
+                <span class="w-[20%] p-5 text-[35px] font-bold">06.</span>
+                <span class="w-[80%] p-5 text-[20px] font-bold leading-[50px]"
+                  >TailWindCSS</span
+                >
+              </div>
             </li>
             <li class="mt-[40px]">
-              <p>&lt;쥬씨&gt;<span class="text-[#5e993e]">&#47;&#47;&nbsp;</span></p>
-              <figure>
-                <img src="./images/juicyThum.png" alt="쥬씨" />
+              <figure class="bg-white">
+                <img src="./images/manageThum.png" alt="manage" />
               </figure>
-              <p class="bottom-0">&lt;쥬씨&#47;&gt;</p>
+              <div class="flex text-left h-[40%]">
+                <span class="w-[20%] p-5 text-[35px] font-bold">07.</span>
+                <span class="w-[80%] p-5 text-[20px] font-bold leading-[50px]"
+                  >TailWindCSS</span
+                >
+              </div>
             </li>
             <li class="mt-[80px]">
-              <p>&lt;웅진 코웨이&gt;<span class="text-[#5e993e]">&#47;&#47;&nbsp;</span></p>
-              <figure>
-                <img src="./images/woonginThum.png" alt="웅진코웨이" />
+              <figure class="bg-white">
+                <img src="./images/juicyThum.png" alt="쥬씨" />
               </figure>
-              <p class="bottom-0">&lt;웅진 코웨이&#47;&gt;</p>
+              <div class="flex text-left h-[40%]">
+                <span class="w-[20%] p-5 text-[35px] font-bold">08.</span>
+                <span class="w-[80%] p-5 text-[20px] font-bold leading-[50px]"
+                  >Responsive Layout</span
+                >
+              </div>
             </li>
             <li class="mt-[120px]">
-              <p>&lt;라운드 어라운드&gt;<span class="text-[#5e993e]">&#47;&#47;&nbsp;</span></p>
-              <figure>
-                <img src="./images/roundThum.png" alt="라운드어라운드" />
+              <figure class="bg-[#c0f2e7]">
+                <img src="./images/woonginThum.png" alt="웅진코웨이" />
               </figure>
-              <p class="bottom-0">&lt;라운드 어라운드&#47;&gt;</p>
+              <div class="flex text-left h-[40%]">
+                <span class="w-[20%] p-5 text-[35px] font-bold">09.</span>
+                <span class="w-[80%] p-5 text-[20px] font-bold leading-[50px]"
+                  >Responsive Layout
+                  <br />
+                  Swiper Slide
+                </span>
+              </div>
             </li>
             <li class="mt-[160px]">
-              <p>&lt;에이스 침대&gt;<span class="text-[#5e993e]">&#47;&#47;&nbsp;</span></p>
-              <figure>
+              <figure class="bg-[#bfffda]">
+                <img src="./images/roundThum.png" alt="라운드어라운드" />
+              </figure>
+              <div class="flex text-left h-[40%]">
+                <span class="w-[20%] p-5 text-[35px] font-bold">10.</span>
+                <span class="w-[80%] p-5 text-[20px] font-bold leading-[50px]"
+                  >Responsive Layout <br />
+                  Position Sticky</span
+                >
+              </div>
+            </li>
+            <li class="mt-[200px]">
+              <figure class="bg-[#e0f7ff]">
                 <img src="./images/aceThum.png" alt="에이스침대" />
               </figure>
-              <p class="bottom-0">&lt;에이스 침대&#47;&gt;</p>
+              <div class="flex border text-left h-[40%]">
+                <span class="w-[20%] p-5 text-[35px] font-bold">11.</span>
+                <span class="w-[80%] p-5 text-[20px] font-bold leading-[50px]"
+                  >Responsive Layout<br />
+                  정규식 표현을 활용한 text변경
+                  <br />
+                  Javascript Resize Event</span
+                >
+              </div>
             </li>
           </ul>
         </div>
       </article>
     </section>
+    <div class="title4" id="container">
+      <svg viewBox="0 0 960 300">
+        <symbol id="a-text">
+          <text text-anchor="middle" x="50%" y="80%">4. About Me</text>
+        </symbol>
+        <g class="g-ants">
+          <use xlink:href="#a-text" class="text-copy"></use>
+          <use xlink:href="#a-text" class="text-copy"></use>
+          <use xlink:href="#a-text" class="text-copy"></use>
+          <use xlink:href="#a-text" class="text-copy"></use>
+          <use xlink:href="#a-text" class="text-copy"></use>
+          <use xlink:href="#a-text" class="text-copy"></use>
+        </g>
+      </svg>
+    </div>
     <section id="sec4" class="px-2">
       <article class="relative rounded-[54px] bg-[#1D1C16] h-[100vh] my-2">
         <!-- <p class="w-[90%] mobile:mx-auto pc:ml-10 pc:leading-relaxed">
@@ -760,7 +890,7 @@
         </div>
         <div class="relative bg-[#F4976E] overflow-hidden" id="introduce">
           <figure class="absolute bottom-0 w-full left-0">
-            <img src="./images/toonmecom_8d8f27.png" alt="me" />
+            <!-- <img src="./images/toonmecom_8d8f27.png" alt="me" /> -->
           </figure>
         </div>
       </article>
@@ -809,7 +939,7 @@
         //섹션이동
         list.addEventListener("click", () => {
           window.scrollTo({
-            top: document.querySelector(`#sec${i + 1}`).offsetTop,
+            top: document.querySelector(`.title${i + 1}`).offsetTop,
             behavior: "smooth",
           });
         });
@@ -1028,6 +1158,22 @@
           }
         });
       }
+
+      gsap.to(".icons", {
+        duration: "1",
+        xPercent: "0",
+        rotate: "360",
+        opacity: "1",
+        ease: "linear",
+        scrollTrigger: {
+          trigger: "#sec1",
+          markers: false,
+          start: "top 70%",
+          end: "bottom top",
+          scrub: 1,
+          // pin: true,
+        },
+      });
     </script>
   </body>
 </html>

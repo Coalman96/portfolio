@@ -9,9 +9,6 @@ module.exports = {
     },
 
     extend: {
-      fontFamily: {
-        myFont: "Playfair Display",
-      },
     },
   },
   plugins: [],
