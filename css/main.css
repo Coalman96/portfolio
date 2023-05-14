@@ -544,16 +544,8 @@ video {
   left: 50%;
 }
 
-.left-10 {
-  left: 2.5rem;
-}
-
 .left-\[20\%\] {
   left: 20%;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .top-0 {
@@ -591,8 +583,8 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.ml-\[100px\] {
-  margin-left: 100px;
+.ml-\[50px\] {
+  margin-left: 50px;
 }
 
 .mt-3 {
@@ -1153,6 +1145,8 @@ video {
   -webkit-text-stroke: 2px white;
   color: transparent;
   opacity: 0.5;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 @keyframes stroke-offset {
@@ -1371,6 +1365,20 @@ div#textContent ul li i {
 #sec1 #rnbThum img{
   width: 100%;
   max-width: 190px;
+  margin: 0 auto;
+}
+
+#sec1 #rnbThum a{
+  background-color: #1b1b1f;
+  color: #a5a1ff;
+  transition: 0.3s;
+  border: 2px solid #1b1b1f;
+}
+
+#sec1 #rnbThum a:hover{
+  background-color: #a5a1ff;
+  color: #1b1b1f;
+  transition: 0.3s;
 }
 
 .row .lnb.smooth {
@@ -1837,6 +1845,14 @@ div#textContent ul li i {
     bottom: 0;
   }
 
+  #sec4 article #contactMe ul li i {
+    line-height: 50px;
+  }
+
+  #sec4 article #contactMe ul li p {
+    line-height: 50px;
+  }
+
   #sec4 article #advantage {
     top: 25%;
   }
@@ -1945,15 +1961,32 @@ div#textContent ul li i {
     transform: translate(-50%, -50%);
   }
 
+  #sec4 article #license li{
+    font-size: min(3vw, 27px);
+  }
+
   #sec4 article #contactMe {
     bottom: 100%;
     transform: translateY(100%);
+  }
+
+  #sec4 article #contactMe ul li p{
+    line-height: 50px;
+    font-size: min(3vw, 27px);
+  }
+
+  #sec4 article #contactMe ul li i {
+    line-height: 50px;
   }
 
   #sec4 article #motto {
     right: 100%;
     bottom: 50%;
     transform: translate(100%, 50%);
+  }
+
+  #sec4 article #motto p{
+    font-size: min(3vw, 27px);
   }
 
   #sec4 article #history {
@@ -1963,6 +1996,10 @@ div#textContent ul li i {
 
   #sec4 article #history:hover {
     border-radius: 0px 0px 100px 100px;
+  }
+
+  #sec4 article #history li{
+    font-size: min(3vw, 25px);
   }
 
   #sec4 article #introduce {
@@ -1989,6 +2026,12 @@ div#textContent ul li i {
     right: 100%;
     transform: translateX(100%);
     bottom: 0;
+  }
+
+  #sec4 article #advantage ul li{
+    width: 50%;
+    line-height: 60px;
+    font-size: min(3vw, 27px);
   }
 
   #sec4 article #advantage:hover {
@@ -2027,6 +2070,10 @@ div#textContent ul li i {
 }
 
 @media (max-width: 768px) {
+  .mobile\:flex-col {
+    flex-direction: column;
+  }
+
   .mobile\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
